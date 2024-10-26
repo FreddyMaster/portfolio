@@ -95,21 +95,19 @@
         </div>
       </div>
     </div>
-    <h2 class="text-2xl font-bold mt-8 mb-4">Cosmic Boogeyman Website</h2>
+    <h2 class="text-2xl font-bold mt-8 mb-4">Trivia Game</h2>
     <hr class="border-t-2 border-gray-300" />
     <h3 class="text-md font-semibold mt-4 mb-2">
       HTML/CSS using Sveltekit and Tailwind
     </h3>
     <p class="text-md mb-4 text-gray-300">
-      I made this website for a tarot reader who asked me to make them a website
-      for their youtube channel to allow people to book online readings with
-      them and view their videos.
+        I made this game as a group project with Daniel Corso.  I did the backend and admin page while Daniel did the frontend with my assistance.
     </p>
 
     <!-- Project Details -->
     <div class="mb-8">
       <h3 class="h3 font-semibold mt-4 mb-2">Project Details</h3>
-      <p class="text-lg mb-2 font-semibold">Type: Solo Project</p>
+      <p class="text-lg mb-2 font-semibold">Type: Group Project - Alexander Gervais and Daniel Corso</p>
       <p class="text-lg mb-2 font-semibold">My Roles:</p>
       <dl class="list-dl">
         <div>
@@ -130,8 +128,7 @@
           <span class="flex-auto">
             <dt>Designer</dt>
             <dd class="text-gray-300">
-              Created the visual design and layout for the website, ensuring a
-              cohesive and appealing aesthetic.
+                Designed the front end for the admin panel which allowed the admin users to add, remove, edit and search questions.  It also allows the admins to moderated users and admins.
             </dd>
           </span>
         </div>
@@ -153,36 +150,11 @@
           <span class="flex-auto">
             <dt>Programmer</dt>
             <dd class="text-gray-300">
-              Developed the front-end functionality using Svelte, implementing
-              interactive elements like the image carousel or interactive video
-              cards.
+              Developed the backend-end functionality using Svelte, Implementing the user being able to interact with the database using forms.
             </dd>
           </span>
         </div>
-        <div>
-          <span class="badge bg-secondary-500 rounded-full"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2em"
-              height="2em"
-              viewBox="0 0 24 24"
-              {...$$props}
-            >
-              <path
-                fill="white"
-                d="M16.509 16.845c.147-.507.09-.971-.155-1.316c-.225-.316-.605-.499-1.062-.52l-8.66-.113a.16.16 0 0 1-.133-.07a.2.2 0 0 1-.02-.156a.24.24 0 0 1 .203-.156l8.736-.113c1.035-.049 2.16-.886 2.554-1.913l.499-1.302a.27.27 0 0 0 .014-.168a5.689 5.689 0 0 0-10.937-.584a2.58 2.58 0 0 0-1.794-.498a2.56 2.56 0 0 0-2.223 3.18A3.634 3.634 0 0 0 0 16.751q.002.264.035.527a.174.174 0 0 0 .17.148h15.98a.22.22 0 0 0 .204-.155zm2.757-5.564c-.077 0-.161 0-.239.011c-.056 0-.105.042-.127.098l-.337 1.174c-.148.507-.092.971.154 1.317c.225.316.605.498 1.062.52l1.844.113c.056 0 .105.026.133.07a.2.2 0 0 1 .021.156a.24.24 0 0 1-.204.156l-1.92.112c-1.042.049-2.159.887-2.553 1.914l-.141.358c-.028.072.021.142.099.142h6.597a.174.174 0 0 0 .17-.126a5 5 0 0 0 .175-1.28a4.74 4.74 0 0 0-4.734-4.727"
-              />
-            </svg></span
-          >
-          <span class="flex-auto">
-            <dt>Backend Developer</dt>
-            <dd class="text-gray-300">
-              Integrated backend services, including data fetching from
-              Cloudflare DB, and populating the database with the Youtube API to
-              support dynamic content.
-            </dd>
-          </span>
-        </div>
+
       </dl>
     </div>
   </div>

@@ -122,6 +122,7 @@
       progress: 75,
     },
   ];
+  ;
 </script>
 
 <main>
@@ -137,9 +138,6 @@
         <ProjectCard {title} {imageSrc} {imageAlt} {description} {link} />
       {/each}
     </div>
-
-
-  
 
   <h2 class="text-2xl font-bold mt-8 mb-4">Skills</h2>
   <hr class="border-t-2 border-gray-300" />
