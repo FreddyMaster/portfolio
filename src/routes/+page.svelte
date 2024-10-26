@@ -1,38 +1,77 @@
 <script>
   import { ProgressBar } from "@skeletonlabs/skeleton";
+  import quizgame from "$lib/assets/quizgame.png";
+  import cosmicsite from "$lib/assets/cosmicsplash.png";
 </script>
 
 <main>
-  <div class="container mx-auto px-4 py-8">
+  <div class="container mx-auto px-32 py-8">
     <h2 class="text-2xl font-bold mt-8 mb-4">Portfolio</h2>
     <hr class="border-t-2 border-gray-300" />
     <h3 class="text-xl font-semibold mt-4 mb-2">My Projects</h3>
     <p class="text-lg mb-4">
       Here are some of the projects I have been a part of.
     </p>
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="bg-gray-100 p-4 rounded-lg shadow-md">
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://images.unsplash.com/photo-1617296538902-887900d9b592?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzExMDB8&ixlib=rb-4.0.3&w=128&h=128&auto=format&fit=crop"
-          alt=""
-        />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="card shadow-lg rounded-lg overflow-hidden max-w-xs mx-auto h-full flex flex-col">
+        <header class="card-header p-4">
+          <h2 class="text-xl font-bold text-center">Cosmic Boogeyman Website</h2>
+        </header>
+        <section class="p-4 flex-grow flex flex-col">
+          <div class="flex justify-center">
+            <img src={cosmicsite} alt="Cosmic Boogeyman Website Splashscreen" />
+          </div>
+          <p class="my-4 text-gray-300">
+            I made this website for a tarot reader who asked me to make them a
+            website for their youtube channel and allow people to book online
+            readings with them.
+          </p>
+          <div class="mt-auto">
+            <a href="/cosmicwebsite" class="btn variant-filled-secondary w-full">Learn More</a>
+          </div>
+        </section>
       </div>
-      <div class="bg-gray-100 p-4 rounded-lg shadow-md">
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://images.unsplash.com/photo-1553184570-557b84a3a308?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzY2NTF8&ixlib=rb-4.0.3&w=128&h=128&auto=format&fit=crop"
-          alt=""
-        />
+      
+      <div class="card shadow-lg rounded-lg overflow-hidden max-w-xs mx-auto h-full flex flex-col">
+        <header class="card-header p-4">
+          <h2 class="text-xl font-bold text-center">Quiz Game</h2>
+        </header>
+        <section class="p-4 flex-grow flex flex-col">
+          <div class="flex justify-center">
+            <img src={quizgame} alt="Quiz Game Main Screen" />
+          </div>
+          <p class="my-4 text-gray-300">
+            This is a game I worked on in a group that challenges the user to
+            get as many points as possible without getting any questions
+            incorrect.
+          </p>
+          <div class="mt-auto">
+            <a href="/quizgame" class="btn variant-filled-secondary w-full">Learn More</a>
+          </div>
+        </section>
       </div>
-      <div class="bg-gray-100 p-4 rounded-lg shadow-md">
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://images.unsplash.com/photo-1617296538902-887900d9b592?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzExMDB8&ixlib=rb-4.0.3&w=128&h=128&auto=format&fit=crop"
-          alt=""
-        />
+      <div class="card shadow-lg rounded-lg overflow-hidden max-w-xs mx-auto h-full flex flex-col">
+        <header class="card-header p-4">
+          <h2 class="text-xl font-bold text-center">Wizard Tower Survival</h2>
+        </header>
+        <section class="p-4 flex-grow flex flex-col">
+          <div class="flex justify-center">
+            <img
+              src="https://img.itch.zone/aW1hZ2UvMzAyNTA3OC8xODA4NzI1Ni5qcGc=/794x1000/Oe4%2Bu1.jpg"
+              alt="Wizard Tower Survival Gameplay"
+            />
+          </div>
+          <p class="my-4 text-gray-300">
+            In this survival game, you play as a wizard battling endless waves
+            of golems. Cast spells and dodge attacks to maintain your health.
+            Earn points by defeating golems and try to get the highest score.
+          </p>
+          <div class="mt-auto">
+            <a href="/quizgame" class="btn variant-filled-secondary w-full">Learn More</a>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
 
     <h2 class="text-2xl font-bold mt-8 mb-4">Skills</h2>
     <hr class="border-t-2 border-gray-300" />
@@ -348,13 +387,12 @@
               /></svg
             >
           </div>
-            <p class="my-4 text-gray-300">
-              Python is a versatile programming language known for its
-              readability and broad applicability in web development, data
-              analysis, artificial intelligence, and more.
-            </p>
-            <ProgressBar value={75} max={100} />
-
+          <p class="my-4 text-gray-300">
+            Python is a versatile programming language known for its readability
+            and broad applicability in web development, data analysis,
+            artificial intelligence, and more.
+          </p>
+          <ProgressBar value={75} max={100} />
         </section>
       </div>
     </div>
@@ -375,25 +413,6 @@
       I am a passionate software developer with a love for creating innovative
       solutions.
     </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">Contact</h2>
-    <hr class="border-t-2 border-gray-300" />
-    <h3 class="text-xl font-semibold mt-4 mb-2">Get in Touch</h3>
-    <div class="card shadow-lg rounded-lg overflow-hidden max-w-xs mx-auto">
-      <header class="card-header p-4">
-        <h2 class="text-xl font-bold text-center">Contact Me</h2>
-      </header>
-      <section class="p-4">
-        <div class="flex justify-center">
-
-        </div>
-        <p class="my-4 text-gray-300">
-          Python is a versatile programming language known for its readability
-          and broad applicability in web development, data analysis,
-          artificial intelligence, and more.
-        </p>
-        <ProgressBar value={50} max={100} />
-      </section>
-    </div>
   </div>
 </main>
+

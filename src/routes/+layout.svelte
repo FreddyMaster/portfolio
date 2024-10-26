@@ -1,6 +1,8 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell } from "@skeletonlabs/skeleton";
+
+  
 </script>
 
 <AppShell>
@@ -9,41 +11,35 @@
       <nav class="list-nav h-full bg-surface-700 flex flex-col">
         <h3 class="h3 mb-4 pt-8 px-4">Alexander Gervais</h3>
         <hr />
-        <ul class="w-full flex-grow mt-4 space-y-4">
-          <li class="py-2 mx-4">
+        <ul class="w-full flex-grow mt-4">
+          <li class="py-2">
             <a href="#portfolio">
               <span><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="white" d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8c0-1.11.89-2 2-2h4V4c0-1.11.89-2 2-2m4 4V4h-4v2z"/></svg></span>
-              <span class="flex-auto text-2xl">Portfolio</span>
+              <span class="flex-auto text-2xl font-semibold">Portfolio</span>
             </a>
           </li>
-          <li class="py-2 mx-4">
+          <li class="py-2">
             <a href="#skills">
               <span><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="white" d="m13.78 15.3l6 6l2.11-2.16l-6-6zm3.72-5.2c-.39 0-.81-.05-1.14-.19L4.97 21.25l-2.11-2.11l7.41-7.4L8.5 9.96l-.72.7l-1.45-1.41v2.86l-.7.7l-3.52-3.56l.7-.7h2.81l-1.4-1.41l3.56-3.56a2.976 2.976 0 0 1 4.22 0L9.89 5.74l1.41 1.4l-.71.71l1.79 1.78l1.82-1.88c-.14-.33-.2-.75-.2-1.12a3.49 3.49 0 0 1 3.5-3.52c.59 0 1.11.14 1.58.42L16.41 6.2l1.5 1.5l2.67-2.67c.28.47.42.97.42 1.6c0 1.92-1.55 3.47-3.5 3.47"/></svg></span>
-              <span class="flex-auto text-2xl">Skills</span>
+              <span class="flex-auto text-2xl font-semibold">Skills</span>
             </a>
           </li>
-          <li class="py-2 mx-4">
+          <li class="py-2">
             <a href="#resume">
               <span><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="white" d="M14 10h5.5L14 4.5zM5 3h10l6 6v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.11.89-2 2-2m0 9v2h14v-2zm0 4v2h9v-2z"/></svg></span>
-              <span class="flex-auto text-2xl">Resume</span>
+              <span class="flex-auto text-2xl font-semibold">Resume</span>
             </a>
           </li>
-          <li class="py-2 mx-4">
+          <li class="py-2">
             <a href="#about">
               <span > <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="white" d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>
-              <span class="flex-auto text-2xl">About</span>
-            </a>
-          </li>
-          <li class="py-2 mx-4">
-            <a href="#contact">
-              <span> <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="white" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></span>
-              <span class="flex-auto text-2xl">Contact</span>
+              <span class="flex-auto text-2xl font-semibold">About</span>
             </a>
           </li>
         </ul>
-        <div class="flex mt-auto w-full justify-center gap-x-8">
+        <div class="flex mt-auto w-full justify-center gap-x-4 max-w-xl">
           <div class="pb-6">
-            <a class="btn-icon btn-icon-xl variant-filled-surface" href="https://github.com/FreddyMaster">
+            <a class="btn-icon btn-icon-lg variant-filled-surface" href="https://github.com/FreddyMaster">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="2rem"
@@ -57,8 +53,8 @@
               </svg>
             </a>
           </div>
-          <div class="pb-4">
-			<a class="btn-icon btn-icon-xl variant-filled-surface" href="https://www.linkedin.com/in/alexander-gervais-a1baa32a5/">
+          <div class="pb-6">
+			<a class="btn-icon btn-icon-lg variant-filled-surface" href="https://www.linkedin.com/in/alexander-gervais-a1baa32a5/">
 				              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="2rem"
@@ -72,6 +68,13 @@
               </svg>
             </a>
           </div>
+          <div class="pb-6">
+            <a class="btn-icon btn-icon-lg variant-filled-surface" href="mailto:aj@gervaisunplugged.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" {...$$props}>
+                <path fill="white" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2" />
+              </svg>
+                  </a>
+                </div>
         </div>
       </nav>
     </svelte:fragment>
