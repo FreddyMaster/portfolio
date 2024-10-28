@@ -119,7 +119,7 @@
       description:
         "Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games.",
       icon: "mdi:blender-software",
-      progress: 75,
+      progress: 35,
     },
   ];
   ;
@@ -127,7 +127,7 @@
 
 <main>
   <div class="container mx-auto px-32 py-8">
-    <h2 class="text-2xl font-bold mt-8 mb-4">Portfolio</h2>
+    <h2 class="text-2xl font-bold mt-8 mb-4" id="portfolio">Portfolio</h2>
     <hr class="border-t-2 border-gray-300" />
     <h3 class="text-xl font-semibold mt-4 mb-2">My Projects</h3>
     <p class="text-lg mb-4">
@@ -139,7 +139,7 @@
       {/each}
     </div>
 
-  <h2 class="text-2xl font-bold mt-8 mb-4">Skills</h2>
+  <h2 class="text-2xl font-bold mt-8 mb-4" id="skills">Skills</h2>
   <hr class="border-t-2 border-gray-300" />
   <p class="text-xl my-8 mx-4">Here are some of my skills</p>
   <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -152,7 +152,7 @@
       />
     {/each}
   </div>
-  <h2 class="text-2xl font-bold mt-8 mb-4">Resume</h2>
+  <h2 class="text-2xl font-bold mt-8 mb-4" id="resume">Resume</h2>
   <hr class="border-t-2 border-gray-300" />
   <div class="my-4">
     <a href={Resume} class="btn variant-filled-secondary" target="_blank">Download Resume PDF</a>
@@ -196,7 +196,7 @@
     <li>High School Diploma in Programming and Web Development, Worcester Technical High School (August 2017 - June 2021), 3.6 GPA</li>
   </ul>
 
-  <h2 class="text-2xl font-bold mt-8 mb-4">About</h2>
+  <h2 class="text-2xl font-bold mt-8 mb-4" id="about">About</h2>
   <hr class="border-t-2 border-gray-300" />
 
   <h3 class="text-xl font-semibold mt-4 mb-2">About Me</h3>

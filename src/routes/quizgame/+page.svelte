@@ -25,7 +25,7 @@
 
 <main>
   <div class="container mx-auto px-32 py-8">
-    <h2 class="text-2xl font-bold mt-8 mb-4">Cosmic Boogeyman Website</h2>
+    <h2 class="text-2xl font-bold mt-8 mb-4">Trivia Game</h2>
     <hr class="border-t-2 border-gray-300" />
 
     <!-- Portfolio Item -->
@@ -156,6 +156,9 @@
         </div>
 
       </dl>
+      <p class="text-lg mt-2 font-semibold">
+        Demo Video:
+      </p>
     </div>
   </div>
 </main>

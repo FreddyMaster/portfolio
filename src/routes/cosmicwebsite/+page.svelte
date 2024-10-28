@@ -25,7 +25,7 @@
 
 <main>
   <div class="container mx-auto px-32">
-    <h2 class="text-2xl font-bold mt-8 mb-4">Cosmic Boogeyman Website</h2>
+    <h2 class="text-2xl font-bold mt-8 mb-4" >Cosmic Boogeyman Website</h2>
     <hr class="border-t-2 border-gray-300" />
 
     <!-- Portfolio Item -->

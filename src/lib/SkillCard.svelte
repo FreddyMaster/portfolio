@@ -17,7 +17,7 @@
       </div>
       <p class="my-4 text-gray-300">{description}</p>
       <div class="mt-auto py-4">
-      <ProgressBar value={progressValue} max={100} />
+      <ProgressBar meter="bg-primary-500" track="bg-primary-400/30" value={progressValue} max={100}/>
       </div>
     </section>
   </article>
