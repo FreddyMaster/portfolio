@@ -2,11 +2,14 @@
   let elemCarousel: HTMLDivElement;
   let currentIndex = 0;
 
-  import cosmicsplash from "$lib/assets/cosmicsplash.png";
-  import cosmicpricing from "$lib/assets/cosmicpricing.png";
-  import cosmicvideos from "$lib/assets/cosmicvideos.png";
+  import quizgamesplash from "$lib/assets/quizgame.png";
+  import quizgamequestions from "$lib/assets/quizgame1.png";
+  import quizgameuserpanel from "$lib/assets/quizgame2.png";
+  import quizgameleaderboardpanel from "$lib/assets/quizgame3.png";
+  import quizgamequestionpanel from "$lib/assets/quizgame4.png";
+  import quizgameendgame from "$lib/assets/quizgame5.png";
 
-  const images = [cosmicsplash, cosmicpricing, cosmicvideos];
+  const images = [quizgamesplash, quizgamequestions, quizgameuserpanel, quizgameleaderboardpanel, quizgamequestionpanel, quizgameendgame];
 
   function updateCarousel() {
     elemCarousel.scroll(elemCarousel.clientWidth * currentIndex, 0);
@@ -24,14 +27,12 @@
 </script>
 
 <main>
-  <div class="container mx-auto px-32 py-8">
-    <h2 class="text-2xl font-bold mt-8 mb-4">Trivia Game</h2>
-    <hr class="border-t-2 border-gray-300" />
-
+  <div class="container mx-auto px-32 py-4">
     <!-- Portfolio Item -->
     <div class="mb-8">
       <div class="card">
-        <div class="p-4 m-8 grid grid-cols-1 items-center">
+        <div class="py-4 m-8 grid grid-cols-1 items-center">
+          <div class="relative inline-block">
           <!-- Full Images -->
           <div
             bind:this={elemCarousel}
@@ -56,7 +57,7 @@
             <!-- Button: Left -->
             <button
               type="button"
-              class="btn-icon variant-filled-surface hover:bg-primary-500 transition duration-300"
+              class="btn-icon variant-soft-surface hover:bg-secondary-500 transition duration-30 absolute top-1/2 left-8 z-10"
               on:click={carouselLeft}
             >
               <svg
@@ -75,7 +76,7 @@
             <!-- Button: Right -->
             <button
               type="button"
-              class="btn-icon variant-filled-surface hover:bg-primary-500 transition duration-300 ml-4"
+              class="btn-icon variant-soft-surface hover:bg-secondary-500 transition duration-300 ml-4 absolute top-1/2 right-8 z-10"
               on:click={carouselRight}
             >
               <svg
@@ -93,6 +94,7 @@
             </button>
           </div>
         </div>
+        </div>
       </div>
     </div>
     <h2 class="text-2xl font-bold mt-8 mb-4">Trivia Game</h2>
@@ -106,9 +108,11 @@
 
     <!-- Project Details -->
     <div class="mb-8">
-      <h3 class="h3 font-semibold mt-4 mb-2">Project Details</h3>
-      <p class="text-lg mb-2 font-semibold">Type: Group Project - Alexander Gervais and Daniel Corso</p>
-      <p class="text-lg mb-2 font-semibold">My Roles:</p>
+      <div class="mb-8">
+        <h3 class="h3 font-semibold mt-8 mb-4">Project Details</h3>
+        <hr class="border-t-2 border-gray-300" />
+        <p class="text-lg mb-2 font-semibold mt-4">Type: Group Project (Alexander Gervais and Daniel Corso)</p>
+        <p class="text-lg mb-2 font-semibold">My Roles:</p>
       <dl class="list-dl">
         <div>
           <span class="badge bg-secondary-500 rounded-full"

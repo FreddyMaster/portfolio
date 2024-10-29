@@ -9,7 +9,7 @@
 	"/quizgame": [
 		"src/routes/+layout.ts"
 	],
-	"/wizardtowersurvival": [
+	"/wizardgame": [
 		"src/routes/+layout.ts"
 	]
 }

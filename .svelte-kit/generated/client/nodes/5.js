@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/wizardtowersurvival/+page.svelte";
+export { default as component } from "../../../../src/routes/wizardgame/+page.svelte";

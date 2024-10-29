@@ -15,7 +15,7 @@ export const dictionary = {
 		"/": [2],
 		"/cosmicwebsite": [3],
 		"/quizgame": [4],
-		"/wizardtowersurvival": [5]
+		"/wizardgame": [5]
 	};
 
 export const hooks = {

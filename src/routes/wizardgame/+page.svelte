@@ -25,13 +25,11 @@
 
 <main>
   <div class="container mx-auto px-32 py-8">
-    <h2 class="text-2xl font-bold mt-8 mb-4">Cosmic Boogeyman Website</h2>
-    <hr class="border-t-2 border-gray-300" />
-
     <!-- Portfolio Item -->
     <div class="mb-8">
       <div class="card">
-        <div class="p-4 m-8 grid grid-cols-1 items-center">
+        <div class="py-4 m-8 grid grid-cols-1 items-center">
+          <div class="relative inline-block">
           <!-- Full Images -->
           <div
             bind:this={elemCarousel}
@@ -56,7 +54,7 @@
             <!-- Button: Left -->
             <button
               type="button"
-              class="btn-icon variant-filled-surface hover:bg-primary-500 transition duration-300"
+              class="btn-icon variant-soft-surface hover:bg-secondary-500 transition duration-30 absolute top-1/2 left-8 z-10"
               on:click={carouselLeft}
             >
               <svg
@@ -75,7 +73,7 @@
             <!-- Button: Right -->
             <button
               type="button"
-              class="btn-icon variant-filled-surface hover:bg-primary-500 transition duration-300 ml-4"
+              class="btn-icon variant-soft-surface hover:bg-secondary-500 transition duration-300 ml-4 absolute top-1/2 right-8 z-10"
               on:click={carouselRight}
             >
               <svg
@@ -93,6 +91,7 @@
             </button>
           </div>
         </div>
+        </div>
       </div>
     </div>
     <h2 class="text-2xl font-bold mt-8 mb-4">Wizard Tower Survival</h2>
@@ -106,8 +105,9 @@
 
     <!-- Project Details -->
     <div class="mb-8">
-      <h3 class="h3 font-semibold mt-4 mb-2">Project Details</h3>
-      <p class="text-lg mb-2 font-semibold">Type: Solo Project</p>
+      <h3 class="h3 font-semibold mt-8 mb-4">Project Details</h3>
+      <hr class="border-t-2 border-gray-300" />
+      <p class="text-lg mb-2 font-semibold mt-4">Type: Solo Project</p>
       <p class="text-lg mb-2 font-semibold">My Roles:</p>
       <dl class="list-dl">
         <div>

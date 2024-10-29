@@ -47,23 +47,6 @@
           </a>
         </li>
         <li class="py-2">
-          <a href="/#resume">
-            <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1.5rem"
-                height="1.5rem"
-                viewBox="0 0 24 24"
-                ><path
-                  fill="white"
-                  d="M14 10h5.5L14 4.5zM5 3h10l6 6v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.11.89-2 2-2m0 9v2h14v-2zm0 4v2h9v-2z"
-                /></svg
-              ></span
-            >
-            <span class="flex-auto text-2xl font-semibold">Resume</span>
-          </a>
-        </li>
-        <li class="py-2">
           <a href="#about">
             <span>
               <svg
