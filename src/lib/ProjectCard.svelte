@@ -6,7 +6,7 @@
     export let link;
   </script>
   
-  <div class="card shadow-lg rounded-lg overflow-hidden max-w-xs mx-auto h-full flex flex-col">
+  <div class="card shadow-lg rounded-lg overflow-hidden max-w-xs max-h-m mx-auto h-full flex flex-col">
     <header class="card-header p-4">
       <h2 class="text-xl font-bold text-center">{title}</h2>
     </header>

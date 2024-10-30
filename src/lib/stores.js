@@ -1,4 +1,4 @@
-// src/lib/stores.js
 import { writable } from 'svelte/store';
 
-export const elementsMap = writable({});
+// Define a writable store to hold whether the header should be scrolled.
+export const scrolled = writable(false);
