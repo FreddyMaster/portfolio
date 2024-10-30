@@ -100,13 +100,16 @@
     </header>
   </svelte:fragment>
   <Drawer>
-    <h2 class="p-4">Navigation</h2>
-    <hr />
-    <nav class="list-nav space-y-2 p-4">
+    <nav class="list-nav space-y-2 p-4 h-full flex flex-col">
+      <h2 class="p-4">Navigation</h2>
+      <hr />
+      <div class="flex-grow">
       <a href="/" on:click={drawerClose} class="btn hover:variant-soft-secondary">Homepage</a>
       <a href="/#projects" on:click={drawerClose} class="btn hover:variant-soft-secondary">Projects</a>
       <a href="/#skills" on:click={drawerClose} class="btn hover:variant-soft-secondary">My Skills</a>
       <a href="/#about" on:click={drawerClose} class="btn hover:variant-soft-secondary">About</a>
+    </div>
+      <div class="flex mt-auto w-full justify-center gap-x-4 max-w-xl">
           <a
             class="btn-icon btn-icon-md variant-soft-primary"
             href="https://github.com/FreddyMaster"
@@ -156,6 +159,7 @@
               />
             </svg>
           </a>
+        </div>
     </nav>
   </Drawer>
   {#key data.url}
