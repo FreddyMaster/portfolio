@@ -27,11 +27,11 @@
 </script>
 
 <main>
-  <div class="container mx-auto px-32 py-4">
+  <div class="container mx-auto px-4 sm:px-8 md:px-16 lg:px-32 py-4">
     <!-- Portfolio Item -->
     <div class="mb-8">
       <div class="card">
-        <div class="py-4 m-8 grid grid-cols-1 items-center">
+        <div class="py-4 m-4 sm:m-8 grid grid-cols-1 items-center">
           <div class="relative inline-block">
           <!-- Full Images -->
           <div
@@ -57,7 +57,7 @@
             <!-- Button: Left -->
             <button
               type="button"
-              class="btn-icon variant-soft-surface hover:bg-secondary-500 transition duration-30 absolute top-1/2 left-8 z-10"
+              class="btn-icon variant-soft-surface hover:bg-secondary-500 transition duration-300 absolute top-1/2 left-4 sm:left-8 z-10"
               on:click={carouselLeft}
             >
               <svg
@@ -76,7 +76,7 @@
             <!-- Button: Right -->
             <button
               type="button"
-              class="btn-icon variant-soft-surface hover:bg-secondary-500 transition duration-300 ml-4 absolute top-1/2 right-8 z-10"
+              class="btn-icon variant-soft-surface hover:bg-secondary-500 transition duration-300 ml-4 absolute top-1/2 right-4 sm:right-8 z-10"
               on:click={carouselRight}
             >
               <svg
@@ -97,13 +97,13 @@
         </div>
       </div>
     </div>
-    <h2 class="text-2xl font-bold mt-8 mb-4">Trivia Game</h2>
+    <h2 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Trivia Game</h2>
     <hr class="border-t-2 border-gray-300" />
-    <h3 class="text-md font-semibold mt-4 mb-2">
+    <h3 class="text-sm sm:text-md font-semibold mt-4 mb-2">
       HTML/CSS using Sveltekit and Tailwind
     </h3>
-    <p class="text-md mb-4 text-gray-300">
-        I made this game as a group project with Daniel Corso.  I did the backend and admin page while Daniel did the frontend with my assistance.
+    <p class="text-sm sm:text-md mb-4 text-gray-300">
+        I made this game as a group project with Daniel Corso. I did the backend and admin page while Daniel did the frontend with my assistance.
     </p>
 
     <!-- Project Details -->
@@ -111,8 +111,8 @@
       <div class="mb-8">
         <h3 class="h3 font-semibold mt-8 mb-4">Project Details</h3>
         <hr class="border-t-2 border-gray-300" />
-        <p class="text-lg mb-2 font-semibold mt-4">Type: Group Project (Alexander Gervais and Daniel Corso)</p>
-        <p class="text-lg mb-2 font-semibold">My Roles:</p>
+        <p class="text-base sm:text-lg mb-2 font-semibold mt-4">Type: Group Project (Alexander Gervais and Daniel Corso)</p>
+        <p class="text-base sm:text-lg mb-2 font-semibold">My Roles:</p>
       <dl class="list-dl">
         <div>
           <span class="badge bg-secondary-500 rounded-full"
@@ -132,7 +132,7 @@
           <span class="flex-auto">
             <dt>Designer</dt>
             <dd class="text-gray-300">
-                Designed the front end for the admin panel which allowed the admin users to add, remove, edit and search questions.  It also allows the admins to moderated users and admins.
+                Designed the front end for the admin panel which allowed the admin users to add, remove, edit and search questions. It also allows the admins to moderate users and admins.
             </dd>
           </span>
         </div>
@@ -154,13 +154,13 @@
           <span class="flex-auto">
             <dt>Programmer</dt>
             <dd class="text-gray-300">
-              Developed the backend-end functionality using Svelte, Implementing the user being able to interact with the database using forms.
+              Developed the backend-end functionality using Svelte, implementing the user being able to interact with the database using forms.
             </dd>
           </span>
         </div>
 
       </dl>
-      <p class="text-lg mt-2 font-semibold">
+      <p class="text-base sm:text-lg mt-2 font-semibold">
         Demo Video:
       </p>
     </div>
