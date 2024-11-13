@@ -24,7 +24,7 @@
 </script>
 
 <main>
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="mx-[10vw] my-[10vh] px-4 sm:px-6 lg:px-8">
     <!-- Portfolio Item -->
     <div class="mb-8">
       <div class="card">

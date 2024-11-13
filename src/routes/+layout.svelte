@@ -18,7 +18,7 @@
 <AppShell regionPage="scroll-smooth" slotPageHeader="sticky top-0 z-10">
   <svelte:fragment slot="header">
     <header
-      class="w-full px-4 py-2 z-50 transition-all duration-300 shadow-lg"
+      class="px-4 py-4 z-50 transition-all duration-300 shadow-lg m-4 bg-surface-800 rounded-full"
     >
       <div class="flex justify-between items-center">
         <h1 class="text-xl md:text-2xl font-bold">
@@ -44,7 +44,6 @@
         </button>
         <nav class="hidden md:flex space-x-4">
           <a href="/#projects" class="btn hover:variant-soft-secondary">Projects</a>
-          <a href="/#skills" class="btn hover:variant-soft-secondary">My Skills</a>
           <a href="/#about" class="btn hover:variant-soft-secondary">About</a>
                     <a
             class="btn-icon btn-icon-md variant-soft-primary"
@@ -106,7 +105,6 @@
       <div class="flex-grow">
       <a href="/" on:click={drawerClose} class="btn hover:variant-soft-secondary">Homepage</a>
       <a href="/#projects" on:click={drawerClose} class="btn hover:variant-soft-secondary">Projects</a>
-      <a href="/#skills" on:click={drawerClose} class="btn hover:variant-soft-secondary">My Skills</a>
       <a href="/#about" on:click={drawerClose} class="btn hover:variant-soft-secondary">About</a>
     </div>
       <div class="flex mt-auto w-full justify-center gap-x-4 max-w-xl">

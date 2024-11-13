@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
   import quizgame from "$lib/assets/quizgame.png";
   import cosmicsite from "$lib/assets/cosmicsplash.png";
   import SkillCard from "$lib/SkillCard.svelte";
@@ -7,95 +9,37 @@
   import selfie from "$lib/assets/selfie.jpg";
 
   const projects = [
-    {
-      title: "Cosmic Boogeyman Website",
-      imageSrc: cosmicsite,
-      imageAlt: "Cosmic Boogeyman Website Splashscreen",
-      description:
-        "I made this website for a tarot reader who asked me to make them a website for their youtube channel and allow people to book online readings with them.",
-      link: "/cosmicwebsite",
-    },
-    {
-      title: "Quiz Game",
-      imageSrc: quizgame,
-      imageAlt: "Quiz Game Main Screen",
-      description:
-        "This is a game I worked on in a group that challenges the user to get as many points as possible without getting any questions incorrect.",
-      link: "/quizgame",
-    },
-    {
-      title: "Wizard Tower Survival",
-      imageSrc:
-        "https://img.itch.zone/aW1hZ2UvMzAyNTA3OC8xODA4NzI1Ni5qcGc=/794x1000/Oe4%2Bu1.jpg",
-      imageAlt: "Wizard Tower Survival Gameplay",
-      description:
-        "In this survival game, you play as a wizard battling endless waves of golems. Cast spells and dodge attacks to maintain your health. Earn points by defeating golems and try to get the highest score.",
-      link: "/wizardgame",
-    },
-  ];
+  {
+    href: "/cosmicwebsite",
+    date: "June 2024",
+    title: "Cosmic Boogeyman Website",
+    description:
+      "I made this website for a tarot reader who asked me to make them a website for their youtube channel and allow people to book online readings with them.",
+    tags: ["Svelte", "Web Development", "Tailwind", "Cloudflare"],
+    imageSrc: cosmicsite,
+  },
+  {
+    href: "/quizgame",
+    date: "January 2024",
+    title: "Quiz Game",
+    description:
+      "This is a game I worked on in a group that challenges the user to get as many points as possible without getting any questions incorrect.",
+    tags: [ "Svelte","Web Development", "Tailwind", "Trivia"],
+    imageSrc: quizgame,
+  },
+  {
+    href: "/wizardgame",
+    date: "October 2024",
+    title: "Wizard Tower Survival",
+    description:
+      "In this survival game, you play as a wizard battling endless waves of golems. Cast spells and dodge attacks to maintain your health. Earn points by defeating golems and try to get the highest score.",
+    tags: ["Game Development", "Unity", "Survival"],
+    imageSrc:
+      "https://img.itch.zone/aW1hZ2UvMzAyNTA3OC8xODA4NzI1Ni5qcGc=/794x1000/Oe4%2Bu1.jpg",
+  },
+];
 
-  const skills = [
-    {
-      name: "Python",
-      icon: "mdi:language-python",
-      progress: 50,
-    },
-    {
-      name: "HTML",
-      icon: "mdi:language-html5",
-      progress: 85,
-    },
-    {
-      name: "CSS",
-      icon: "mdi:language-css3",
-      progress: 75,
-    },
-    {
-      name: "JavaScript",
-      icon: "mdi:language-javascript",
-      progress: 50,
-    },
-    {
-      name: "Unity",
-      icon: "mdi:unity",
-      progress: 70,
-    },
-    {
-      name: "Git",
-      icon: "mdi:git",
-      progress: 70,
-    },
-    {
-      name: "C",
-      icon: "mdi:language-c",
-      progress: 65,
-    },
-    {
-      name: "Windows",
-      icon: "mdi:microsoft",
-      progress: 95,
-    },
-    {
-      name: "Linux",
-      icon: "fa-brands:linux",
-      progress: 85,
-    },
-    {
-      name: "SQL",
-      icon: "fontisto:mysql",
-      progress: 65,
-    },
-    {
-      name: "Photoshop",
-      icon: "devicon-plain:photoshop",
-      progress: 85,
-    },
-    {
-      name: "Blender",
-      icon: "mdi:blender-software",
-      progress: 35,
-    },
-  ];
+
 </script>
 
 <section class="landing-page flex items-center justify-center h-screen text-white text-center">
@@ -112,27 +56,18 @@
   </div>
 </section>
 
-<main>
-  <div class="container mx-auto px-4 md:px-32 py-8">
+<main class="container mx-auto">
+  <div class="px-4 md:px-32 py-8">
     <h3 class="text-xl font-semibold mt-8 mb-4" id="projects">My Projects</h3>
     <hr class="border-t-2 border-gray-300" />
     <p class="text-lg mb-4">
       Here are some of the projects I have been a part of.
     </p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      {#each projects as { title, imageSrc, imageAlt, description, link }}
-        <ProjectCard {title} {imageSrc} {imageAlt} {description} {link} />
+    <div class="flex flex-col gap-4 content-center">
+      {#each projects as {href, date, title, description, tags, imageSrc}}
+        <ProjectCard {href} {date} {title} {description} {tags} {imageSrc} />
       {/each}
-    </div>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4" id="skills">Skills</h2>
-    <hr class="border-t-2 border-gray-300" />
-    <p class="text-xl my-8 mx-4">Here are some of my skills</p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-      {#each skills as { name, icon, progress }}
-        <SkillCard skillName={name} {icon} progressValue={progress} />
-      {/each}
-    </div>
+    </div>    
     <h2 class="text-2xl font-bold mt-8 mb-4" id="about">About</h2>
     <hr class="border-t-2 border-gray-300" />
 

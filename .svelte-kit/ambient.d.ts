@@ -38,7 +38,7 @@ declare module '$env/static/private' {
 	export const C_INCLUDE_PATH: string;
 	export const DriverData: string;
 	export const EDITOR: string;
-	export const EFC_29204: string;
+	export const EFC_18132: string;
 	export const GIT_ASKPASS: string;
 	export const GIT_INSTALL_ROOT: string;
 	export const HOME: string;
@@ -152,7 +152,7 @@ declare module '$env/dynamic/private' {
 		C_INCLUDE_PATH: string;
 		DriverData: string;
 		EDITOR: string;
-		EFC_29204: string;
+		EFC_18132: string;
 		GIT_ASKPASS: string;
 		GIT_INSTALL_ROOT: string;
 		HOME: string;
