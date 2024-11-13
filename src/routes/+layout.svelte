@@ -18,7 +18,7 @@
 <AppShell regionPage="scroll-smooth" slotPageHeader="sticky top-0 z-10">
   <svelte:fragment slot="header">
     <header
-      class="px-4 py-4 z-50 transition-all duration-300 shadow-lg m-4 bg-surface-800 rounded-full"
+      class="px-4 py-4 z-50 transition-all duration-300 shadow-lg mt-4 mx-16 bg-surface-800 rounded-full"
     >
       <div class="flex justify-between items-center">
         <h1 class="text-xl md:text-2xl font-bold">

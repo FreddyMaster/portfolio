@@ -58,9 +58,9 @@
 
 <main class="container mx-auto">
   <div class="px-4 md:px-32 py-8">
-    <h3 class="text-xl font-semibold mt-8 mb-4" id="projects">My Projects</h3>
+    <h2 class="h2 mt-8 mb-4" id="projects">My Projects</h2>
     <hr class="border-t-2 border-gray-300" />
-    <p class="text-lg mb-4">
+    <p class="text-xl mb-8">
       Here are some of the projects I have been a part of.
     </p>
     <div class="flex flex-col gap-4 content-center">
@@ -73,8 +73,8 @@
 
     <div class="bg-background text-foreground py-4 md:py-8 flex flex-col md:flex-row items-center justify-center gap-8">
       <div class="w-full md:w-2/3 md:text-left">
-        <h1 class="text-2xl font-bold mb-2">Alexander Gervais</h1>
-        <p class="text-lg mb-4">Programmer and Web Developer</p>
+        <h2 class="h2 mt-8 mb-4">Alexander Gervais</h2>
+        <p class="text-xl mb-8">Programmer and Web Developer</p>
         <div class="prose max-w-3xl">
           <section class="space-y-4">
             <div class="welcome mb-6">
