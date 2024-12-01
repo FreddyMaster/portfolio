@@ -7,6 +7,7 @@
   import ProjectCard from "$lib/ProjectCard.svelte";
   import Resume from "$lib/assets/AlexanderGervaisResume.pdf";
   import selfie from "$lib/assets/selfie.jpg";
+  import Spotlight from "$lib/Spotlight.svelte";
 
   const projects = [
   {
@@ -38,22 +39,20 @@
       "https://img.itch.zone/aW1hZ2UvMzAyNTA3OC8xODA4NzI1Ni5qcGc=/794x1000/Oe4%2Bu1.jpg",
   },
 ];
-
-
 </script>
 
 <section class="landing-page flex items-center justify-center h-screen text-white text-center">
-  <div>
-    <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
-    <p class="text-xl mb-8">Alexander Gervais - Programmer & Web Developer</p>
-    <button
+    <div>
+      <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
+      <p class="text-xl mb-8">Alexander Gervais - Programmer & Web Developer</p>
+      <button
       class="btn variant-filled-primary"
       on:click={() =>
         document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}
     >
-      View My Projects
-    </button>
-  </div>
+    View My Projects
+  </button>
+</div>
 </section>
 
 <main class="container mx-auto">
@@ -63,11 +62,15 @@
     <p class="text-xl mb-8">
       Here are some of the projects I have been a part of.
     </p>
-    <div class="flex flex-col gap-4 content-center">
-      {#each projects as {href, date, title, description, tags, imageSrc}}
-        <ProjectCard {href} {date} {title} {description} {tags} {imageSrc} />
-      {/each}
-    </div>    
+<div class="flex flex-col gap-4 content-center w-4/5 mx-auto">
+  {#each projects as {href, date, title, description, tags, imageSrc}}
+  <Spotlight class="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-4xl group hover:border-primary-500 transition-all duration-300 w-24 md:w-32 lg:w-40"
+             gradientColor="#262626">
+    <ProjectCard {href} {date} {title} {description} {tags} {imageSrc} />
+  </Spotlight>
+  {/each}
+</div>
+
     <h2 class="text-2xl font-bold mt-8 mb-4" id="about">About</h2>
     <hr class="border-t-2 border-gray-300" />
 
